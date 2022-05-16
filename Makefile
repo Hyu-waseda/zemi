@@ -33,8 +33,7 @@ LIBMLX			=	$(MLX_DIR)/libmlx.a
 $(NAME): $(OBJ_DIR) $(OBJS)
 	make bonus -C $(LIBFT_DIR)
 	make -C $(MLX_DIR)
-	$(CC) $(CFLAG) $(OBJS) $(LIBFT_DIR)/$(LIBFT) -o $@ -I/usr/X11/include -Lminilibx-linux -lmlx_Darwin -L/usr/X11/include/../lib -lXext -lX11
-#-I/usr/X11/include -Lminilibx-linux -L/usr/X11/include/../lib -lXext -lX11 -lm
+	$(CC) $(CFLAG) $(OBJS) $(LIBFT_DIR)/$(LIBFT) $(LIBMLX) -o $@ -I/usr/X11/include -Lminilibx-linux -L/usr/X11/include/../lib -lXext -lX11 -lm
 
 $(OBJ_DIR)/%.o: %.c
 	$(CC) -g -c $< -o $@ -I $(HEADER)
