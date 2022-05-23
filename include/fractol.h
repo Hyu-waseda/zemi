@@ -20,9 +20,9 @@
 # include "minilibx-linux/mlx.h"
 # include <math.h>
 
-# define HEIGHT	200
-# define WIDTH	200
-# define LOOP	100
+# define HEIGHT	300
+# define WIDTH	300
+# define LOOP	120
 # define COLOR	5000
 # define UP		65362
 # define DOWN	65364
