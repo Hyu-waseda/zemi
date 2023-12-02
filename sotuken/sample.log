@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2023.6.13)  19 NOV 2023 11:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**sample.tex
+(/usr/local/texlive/2023/texmf-dist/tex/context/sample/common/sample.tex
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
+! Undefined control sequence.
+l.4 \starttext
+              
+? 
+! Emergency stop.
+l.4 
+    
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 17 strings out of 475736
+ 560 string characters out of 5782273
+ 1851756 words of memory out of 5000000
+ 20861 multiletter control sequences out of 15000+600000
+ 513387 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,0n,12p,112b,9s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.
