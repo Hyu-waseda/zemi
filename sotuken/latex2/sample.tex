@@ -1,4 +1,4 @@
-\documentclass[b5paper,12pt]{jsreport}
+\documentclass[b5paper,12pt,dvipdfmx]{jsreport}
 \usepackage[top=2cm,bottom=2cm,left=2.5cm,right=2.5cm]{geometry}
 
 \usepackage{bm}
@@ -10,7 +10,11 @@
 
 \usepackage{caption}
 
-\usepackage{color}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+
+% \usepackage{color}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 
 \usepackage{booktabs}
@@ -21,6 +25,7 @@
 
 % \usepackage[dvipdfmx]{graphicx}
 % \usepackage[dvipdfmx]{color}
+
 
 \setlength{\parskip}{2mm} % 3mmのスペースを挿入
 
@@ -42,7 +47,7 @@
 \clearpage % 新しいページを開始
 \pagenumbering{arabic} % 本文のページ番号をアラビア数字に設定し，1から開始
 \chapter{はじめに}
-
+ 
 \section{現状}
 
 インターネットの普及やソーシャルメディアの台頭により，オンラインでのコミュニケーションが一般的になっている（大向，2006）.その中でも，誰でも気軽に参加することのできる掲示板は重要なコミュニケーションの場となっている.日本では，"5ちゃんねる"（サイト名を"2ちゃんねる"から"5ちゃんねる"へ2017年10月に変更）が広く知られている一方で，米国発の"reddit"は国際的に認知度が高く，日別のアクティブユーザー数は5700万人，総投稿数は130億投稿を超えている(Reddit Inc，2023).これらの大規模な掲示板は情報の集積場所として，またユーザー間の活発な議論の場として重要な役割を果たしている.
@@ -107,13 +112,13 @@
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=90mm,height=45mm]{img/system.jpg}
+	\includegraphics[width=124mm,height=40mm]{img/system_usage_flow.png}
 
 	\caption{システム利用フロー}
 \end{figure}
 
 \begin{enumerate}
-	\item ユーザーはスレッド一覧やスレッドに投稿されたコメントを閲覧することができる.
+    \item ユーザーはブラウザを通して掲示板を閲覧する.
 	\item ユーザーは閲覧しているスレッドに対してコメントを投稿することができる.
 	\item ユーザーは自由にスレッドを作成することができる.
 	\item ユーザーはいつでも言語を選択することができる.
@@ -146,7 +151,7 @@
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=90mm,height=45mm]{img/side_menu.png}
+	\includegraphics[width=190mm,height=15mm]{img/header.png}
 
 	\caption*{ヘッダ表示}
 \end{figure}
@@ -221,24 +226,33 @@
 左部にあるメニューボタンをクリックするとサイドメニューを表示することができる."The Channel"と書かれている部分を選択すると，どの画面からでもトップページ画面に遷移することができる.
 
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=90mm,height=45mm]{./img/select_language.png}
+% \begin{figure}[htbp]
+% 	\centering
+% 	\includegraphics[width=90mm,height=45mm]{./img/select_language.png}
 
-	\caption*{言語選択表示}
-\end{figure}
+% 	\caption*{言語選択表示}
+% \end{figure}
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=90mm,height=45mm]{./img/thread_create_error.png}
-\end{figure}
+% \begin{figure}[htbp]
+% 	\centering
+% 	\includegraphics[width=90mm,height=45mm]{./img/thread_create_error.png}
+% \end{figure}
 
 \section{システム構成の概要}
 本システムは，ユーザーがWebブラウザを通じて掲示板にアクセスする構成を採用している.
 
+\red{// TODO: アイコンの権利関係確認}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm,height=75mm]{./img/technology\_stack.png}
+
+	\caption*{技術スタッ}
+\end{figure}
+
 % このセクションでは，システムの基本構成とその目的について概説する.
 
-\subsection{サーバーについて}
+\subsection{サーバー}
 本研究では，さくらのVPSをサーバーとして使用している.サーバーのオペレーティングシステムにはUbuntu 22.04.3 LTSを採用した.以下にサーバーのCPU，メモリ，ストレージ，ネットワークインターフェイスに関する詳細な情報を記載する.
 
 \subsubsection{メモリ情報}
@@ -367,13 +381,10 @@ AIDEの設定は以下の通り.
 このセットアップにより，システムの安全性を高め，不正アクセスや変更があった場合に迅速に対応できる.
 
 
-
-了解しました。事実のみを述べる形に文章を簡略化します。
-
 \subsection{バックエンド開発}
-本研究のバックエンド開発においては、Python言語とFastAPIフレームワークを中心に、多様なライブラリを利用した。Pythonはバックエンドの主要言語として、FastAPIは主要フレームワークとして採用した。また、翻訳機能はgoogletransライブラリを用いて実現した。
+本研究のバックエンド開発においては，Python言語とFastAPIフレームワークを中心に，多様なライブラリを利用した.Pythonはバックエンドの主要言語として，FastAPIは主要フレームワークとして採用した.また，翻訳機能はgoogletransライブラリを用いて実現した.
 
-以下に、本研究において使用したライブラリの一覧を示す。
+以下に，本研究において使用したライブラリの一覧を示す.
 \begin{itemize}
     \item anyio: 3.6.2
     \item cachetools: 5.3.1
@@ -448,12 +459,12 @@ AIDEの設定は以下の通り.
 %     \item websockets: 11.0.2
 % \end{itemize}
 
+
 \subsection{フロントエンド開発}
-本研究のフロントエンド開発においては、TypeScript言語とReactライブラリ、Next.jsフレームワークを中心に、Material UIを含む多様なライブラリを利用した。TypeScriptはフロントエンドの主要言語として、ReactとNext.jsは主要なライブラリとフレームワークとして採用した。また、UIコンポーネントはMaterial UIを用いて実現した。
+本研究のフロントエンド開発においては，TypeScript言語とReactライブラリ，Next.jsフレームワークを中心に，Material UIを含む多様なライブラリを利用した.TypeScriptはフロントエンドの主要言語として，ReactとNext.jsは主要なライブラリとフレームワークとして採用した.また，UIコンポーネントはMaterial UIを用いて実現した.
 
-
-\subsection{依存関係}
-フロントエンド開発において直接利用されたライブラリの一覧を示す。
+\subsubsection{依存関係}
+フロントエンド開発において直接利用されたライブラリの一覧を示す.
 
 \begin{itemize}
     \item @emotion/react: 11.11.0
@@ -475,8 +486,8 @@ AIDEの設定は以下の通り.
     \item sass: 1.62.1
 \end{itemize}
 
-\subsection{開発用依存関係}
-開発プロセスを支援するために使用されたライブラリの一覧を示す。
+\subsubsection{開発用依存関係}
+開発プロセスを支援するために使用されたライブラリの一覧を示す.
 
 \begin{itemize}
     \item @types/node: 18.16.0
@@ -622,6 +633,13 @@ AIDEの設定は以下の通り.
 
 \section{コンポーネント設計}
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm,height=75mm]{./img/components.png}
+
+	\caption*{コンポーネント図}
+\end{figure}
+
 この掲示板は，表示コンポーネント，データ取得コンポーネント，データ更新コンポーネントからなる.ユーザー側インターフェイスであるWebブラウザと通信するのは表示コンポーネントである.表示コンポーネントは，画面を表示するために必要なデータをデータ取得コンポーネントに要求する.データ取得コンポーネントは，その要求を読み取り，適切に加工されたデータを表示コンポーネントに渡す.また，表示コンポーネントは，ユーザーのスレッド作成やコメント投稿に応じてデータ更新コンポーネントを呼び出し，処理を要求する.データ取得コンポーネントはその要求を読み取り，データを適切に加工して保存する.
 
 動的な文章の翻訳はデータ取得コンポーネントで行なっている.表示コンポーネントがデータ取得コンポーネントに処理を要求する際，ユーザーが選択している言語の情報を付属させる.データ取得コンポーネントはデータを取得した後，その言語に翻訳を行い表示コンポーネントにデータを渡す.さらに，システムは翻訳の高速化と効率化のためにキャッシュ機能を実装している.一度翻訳された文章はキャッシュに保存され，同じ文章の再翻訳が必要な場合，システムはキャッシュから翻訳済みのデータを読み込む.これにより，翻訳のたびに新たに翻訳を行う必要がなくなり，システムの応答時間を大幅に短縮できる.このキャッシュシステムは，特に多言語での交流が活発な掲示板において，ユーザー体験の向上に大きく寄与している.
@@ -632,8 +650,6 @@ AIDEの設定は以下の通り.
 \subsection*{表示コンポーネント}
 
 表示コンポーネントは以下のような構成になっている.
-
-図図図図図図図図図図図図図図図図図図図図図
 
 ページはそれぞれ以下のファイルである.
 
@@ -646,7 +662,7 @@ AIDEの設定は以下の通り.
     \item \texttt{/pages/thread/index.tsx} … スレッドページ
 \end{itemize}
 
-表示の流れの図図図図図図図図図
+\red{// TODO: 表示の流れの図}
 
 図は，画面表示の際の表示コンポーネントの振る舞いをあらわしたものである.表示コンポーネントは，それぞのれページとそのページで使用される部品であるコンポーネントから成り立っている.また，画像やアイコンに関して専用のpublicフォルダを用意し，そこから読み込んでいる.
 
@@ -663,6 +679,8 @@ AIDEの設定は以下の通り.
     \item \texttt{comment\_infrastructure.py} … コメントのインフラストラクチャ関連処理
     \item \texttt{translation.py} … 翻訳機能の実装
 \end{itemize}
+
+\red{// TODO: データ更新の流れの図}
 
 上記のファイルリストは，以下のアーキテクチャを採用し作成された.このアーキテクチャは，明確な役割と責任を持つ複数のレイヤーに分かれている.
 
