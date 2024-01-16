@@ -47,7 +47,7 @@
 \contentsline {paragraph}{「cookieAccepted」Cookie同意状態の記録}{27}{}%
 \contentsline {section}{\numberline {2.7}システム運用とユーザー獲得への取り組み}{27}{}%
 \contentsline {chapter}{\numberline {第3章}結果}{28}{}%
-\contentsline {section}{\numberline {3.1}利用状況}{28}{}%
+\contentsline {section}{\numberline {3.1}利用状況の分析結果}{28}{}%
 \contentsline {subsection}{\numberline {3.1.1}スレッドとコメント}{28}{}%
 \contentsline {subsection}{\numberline {3.1.2}ユーザーアクセス}{29}{}%
 \contentsline {subsection}{\numberline {3.1.3}アクセス方法}{30}{}%
@@ -57,4 +57,8 @@
 \contentsline {subsection}{\numberline {4.1.1}技術的課題}{32}{}%
 \contentsline {subsubsection}{開発プロセス}{32}{}%
 \contentsline {subsubsection}{翻訳}{32}{}%
-\contentsline {chapter}{引用・参考文献}{34}{}%
+\contentsline {subsection}{\numberline {4.1.2}ユーザー獲得と定着の課題}{33}{}%
+\contentsline {subsubsection}{ユーザー獲得}{33}{}%
+\contentsline {subsubsection}{ユーザー定着}{33}{}%
+\contentsline {section}{\numberline {4.2}総括と展望}{33}{}%
+\contentsline {chapter}{引用・参考文献}{35}{}%

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023) (preloaded format=platex 2023.6.13)  15 JAN 2024 17:30
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023) (preloaded format=platex 2023.6.13)  16 JAN 2024 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,9 +735,15 @@ Overfull \hbox (5.01202pt too wide) in paragraph at lines 735--748
 第4章
 [32
 
-] [33] [34
+] [33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1268
+[]\OT1/cmr/m/n/10 DeepL (2024). DeepL API. $\OT1/cmtt/m/n/10 https : / / www . 
+deepl . com / ja / docs-[]api$ \JY1/mc/m/n/10 （ 参照日
+ []
 
-] [35] (./sample.aux)
+[35
+
+] [36] (./sample.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-06-01>
@@ -745,12 +751,12 @@ L3 programming layer <2023-06-05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13194 strings out of 476390
- 258758 string characters out of 5797327
+ 13195 strings out of 476390
+ 258769 string characters out of 5797327
  1857595 words of memory out of 5000000
- 33668 multiletter control sequences out of 15000+600000
+ 33669 multiletter control sequences out of 15000+600000
  532861 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 105i,9n,106p,871b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,9n,106p,912b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on sample.dvi (37 pages, 94916 bytes).
+Output written on sample.dvi (38 pages, 100296 bytes).
