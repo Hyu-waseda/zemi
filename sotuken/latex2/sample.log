@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023) (preloaded format=platex 2023.6.13)  17 JAN 2024 20:45
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023) (preloaded format=platex 2023.6.13)  18 JAN 2024 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,83 +667,93 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 File: img/system_usage_flow.png Graphic file (type bmp)
 <img/system_usage_flow.png>
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 137.
+(Font)              scaled to size 11.53198pt on input line 139.
 File: ./img/screen/top_page.png Graphic file (type bmp)
 <./img/screen/top_page.png>
- [5]
+ [5] [6]
 File: ./img/screen/thread_detail.png Graphic file (type bmp)
 <./img/screen/thread_detail.png>
- [6]
 File: ./img/screen/thread_create.png Graphic file (type bmp)
 <./img/screen/thread_create.png>
  [7]
 File: ./img/feature/thread_textfield.png Graphic file (type bmp)
 <./img/feature/thread_textfield.png>
+ [8]
 File: ./img/feature/thread_textfield_error.png Graphic file (type bmp)
 <./img/feature/thread_textfield_error.png>
- [8]
 File: ./img/feature/comment_textfield.png Graphic file (type bmp)
 <./img/feature/comment_textfield.png>
+ [9]
 File: ./img/feature/comment_textfield_error.png Graphic file (type bmp)
 <./img/feature/comment_textfield_error.png>
 File: ./img/feature/latest_update_thread_list.png Graphic file (type bmp)
 <./img/feature/latest_update_thread_list.png>
- [9]
+ [10]
 File: ./img/feature/new_thread_list.png Graphic file (type bmp)
 <./img/feature/new_thread_list.png>
- [10]
+File: ./img/feature/thread_list_skeleton.png Graphic file (type bmp)
+<./img/feature/thread_list_skeleton.png>
+ [11]
+File: ./img/feature/comment.png Graphic file (type bmp)
+<./img/feature/comment.png>
+File: ./img/feature/comment_skeleton.png Graphic file (type bmp)
+<./img/feature/comment_skeleton.png>
+ [12]
 File: ./img/feature/header.png Graphic file (type bmp)
 <./img/feature/header.png>
 File: ./img/feature/side_menu.png Graphic file (type bmp)
 <./img/feature/side_menu.png>
- [11]
+ [13]
 File: ./img/feature/language_select.png Graphic file (type bmp)
 <./img/feature/language_select.png>
- [12]
+ [14]
+File: ./img/feature/cookie_banner.png Graphic file (type bmp)
+<./img/feature/cookie_banner.png>
+ [15]
 File: ./img/feature/footer.png Graphic file (type bmp)
 <./img/feature/footer.png>
- [13]
 File: ./img/system/.png Graphic file (type bmp)
 <./img/system/.png>
+ [16]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 296.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 337.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 296.
+(Font)              scaled to size 9.60999pt on input line 337.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 296.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 337.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 296.
- [14] [15] [16] [17] [18] [19]
-[20] [21] [22]
+(Font)              scaled to size 9.60999pt on input line 337.
+ [17] [18] [19]
+[20] [21] [22] [23] [24] [25]
 File: ./img/components/display_component_sequence_diagram.png Graphic file (typ
 e bmp)
 <./img/components/display_component_sequence_diagram.png>
- [23] [24]
+ [26] [27]
 File: ./img/components/data_update_component_sequence_diagram.png Graphic file 
 (type bmp)
 <./img/components/data_update_component_sequence_diagram.png>
 
-Overfull \hbox (5.01202pt too wide) in paragraph at lines 730--743
+Overfull \hbox (5.01202pt too wide) in paragraph at lines 699--712
  [][][][] 
  []
 
-[25] [26] [27]
+[28] [29] [30]
 第3章
-[28
+[31
 
-] [29] [30] [31]
+] [32] [33] [34]
 第4章
-[32
-
-] [33] [34]
-Underfull \hbox (badness 5970) in paragraph at lines 1262--1263
-[]\OT1/cmr/m/n/10 DeepL (2024a). DeepL API. $\OT1/cmtt/m/n/10 https : / / www .
- deepl . com / ja / docs-[]api$ \JY1/mc/m/n/10 （ 参照日
- []
-
 [35
 
-] [36] (./sample.aux)
+] [36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
+[]\OT1/cmr/m/n/10 DeepL (2024). DeepL API. $\OT1/cmtt/m/n/10 https : / / www . 
+deepl . com / ja / docs-[]api$ \JY1/mc/m/n/10 （ 参照日
+ []
+
+[38
+
+] [39] (./sample.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-06-01>
@@ -751,12 +761,12 @@ L3 programming layer <2023-06-05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13195 strings out of 476390
- 258771 string characters out of 5797327
+ 13223 strings out of 476390
+ 259715 string characters out of 5797327
  1857595 words of memory out of 5000000
- 33669 multiletter control sequences out of 15000+600000
+ 33693 multiletter control sequences out of 15000+600000
  532861 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 105i,9n,106p,903b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,9n,106p,900b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on sample.dvi (38 pages, 100364 bytes).
+Output written on sample.dvi (41 pages, 103800 bytes).
